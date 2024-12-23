@@ -1,493 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rise Of Nations</title>
-  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap" rel="stylesheet">
-  <style>
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  background: #232328;
-  font-family: "Quicksand", sans-serif;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.swiper-slide {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-/* content */
-
-.content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 14%;
-  left: 3%;
-  width: 40%;
-  height: max-content;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 20px;
-  opacity: 0;
-  z-index: 2;
-}
-
-.content h1 {
-  font-family: "Salsa", cursive;
-  font-size: clamp(2rem, 3vw, 6rem);
-  margin-bottom: 20px;
-  opacity: 0;
-}
-
-.content p {
-  font-family: inherit;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  font-weight: 500;
-  opacity: 0;
-}
-
-.swiper-slide-active .content {
-  opacity: 1;
-}
-
-.swiper-slide-active .content h1 {
-  animation: moveDown 0.8s ease-in forwards;
-}
-
-.swiper-slide-active .content p {
-  animation: moveDown 1s ease-in forwards;
-  animation-delay: 1s;
-}
-
-@keyframes moveDown {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* background */
-
-.background[data-item="one"] {
-  background: url(1.png);
-  background-size: cover;
-  background-position: 50% 40%;
-}
-
-.background[data-item="two"] {
-  background: url(https://cdn.discordapp.com/attachments/1284036688238215228/1313245664418861096/hoi4_T5ywwn3pdd.gif?ex=676b1e55&is=6769ccd5&hm=e52bedafee124325a918375ffb625a9b8c811c8c9e5b8bad4e9d3cd08106dbc0&);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.background[data-item="three"] {
-  background: url(harry.gif);
-  background-size: cover;
-  background-position: 50% 40%;
-}
-
-.background[data-item="four"] {
-  background: url(https://cdn.discordapp.com/attachments/1303462718212280330/1320823643382612129/image.png?ex=676b0060&is=6769aee0&hm=680770fd2039a0243649ead5c1e1a0b9ce1ebfdb50d0c2ffba38188d4e003eb7&);
-  background-size: cover;
-  background-position: 50% 60%;
-}
-
-.background[data-item="five"] {
-  background: url(https://cdn.discordapp.com/attachments/1303462718212280330/1320084522154332252/image.png?ex=676af304&is=6769a184&hm=d5a4ecee66750c7af56f725f625e5040b17ac29b571bfdab4c8c30da2874d50d&);
-  background-size: cover;
-  background-position: 50% 40%;
-}
-
-.background {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  clip-path: circle(5%);
-  filter: brightness(90%);
-  overflow: hidden;
-  opacity: 0;
-  z-index: 1;
-}
-
-.animation {
-  animation: resizeClipPath 3s ease-in-out forwards;
-}
-
-@keyframes resizeClipPath {
-  0% {
-    clip-path: circle(5%);
-    opacity: 0;
-  }
-  100% {
-    clip-path: circle(71%);
-    opacity: 1;
-  }
-}
-
-/* pagination bullet */
-
-.swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  background-color: #a3a6a3;
-  border-radius: 50%;
-  transition: all 0.6s ease-in-out;
-}
-
-.swiper-pagination-bullet-active {
-  height: 32px;
-  background-image: linear-gradient(180deg, #f09819 0%, #ff512f 100%);
-  border-radius: 14px;
-}
-
-/* footer */
-
-.footer {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  column-gap: 20px;
-  bottom: 0;
-  left: 50%;
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  width: max-content;
-  padding: 20px;
-  color: #f2f2f2;
-  border-radius: 8px 8px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  z-index: 2;
-}
-
-.feature {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-}
-
-.feature i {
-  font-size: 1.4rem;
-}
-
-.feature p {
-  font-weight: 700;
-}
-
-.btn {
-  display: block;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 15px 20px;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 14px -7px #f09819;
-  background-image: linear-gradient(
-    45deg,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-  background-size: 200% auto;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  transition: 0.5s;
-}
-
-.btn:hover {
-  background-position: right center;
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-.logo {
-  position: fixed;
-  right: -20px;
-  bottom: -35px;
-  z-index: 10;
-}
-
-.logo img {
-  width: 120px;
-}
-
-@media (max-width: 890px) {
-  .logo {
-  right: -10px;
-  bottom: -20px;
-}
-  
- .logo img {
-  width: 80px;
-  }
-}
-
-/* media queries */
-
-@media (max-width: 1200px) {
-  .content {
-    top: 18%;
-  }
-
-  .content[data-content="two"],
-  .content[data-content="three"] {
-    top: 5%;
-    width: 50%;
-  }
-}
-
-@media (max-width: 900px) {
-  .content,
-  .content[data-content="three"] {
-    top: 55%;
-    left: 2%;
-    width: 60%;
-  }
-
-  .content[data-content="two"] {
-    top: 10%;
-  }
-
-  .content h1 {
-    margin-bottom: 14px;
-  }
-
-  .content p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-
-  .feature i {
-    font-size: 1.3rem;
-  }
-
-  .feature p {
-    font-size: 1rem;
-  }
-
-  .btn {
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 790px) {
-  .footer {
-    column-gap: 10px;
-  }
-
-  .feature i {
-    font-size: 1.1rem;
-  }
-
-  .feature p {
-    font-size: 0.9rem;
-  }
-
-  .feature small {
-    font-size: 0.8rem;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-    padding: 8px 12px;
-  }
-}
-
-@media (max-width: 660px) {
-  .content,
-  .content[data-content="two"],
-  .content[data-content="three"] {
-    top: unset;
-    left: 2%;
-    bottom: 3%;
-    width: 80%;
-  }
-
-  .content p {
-    font-size: 0.9rem;
-    line-height: 1.2;
-  }
-
-  .background[data-item="two"] {
-    background-position: 40% 50%;
-  }
-
-  .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-  }
-
-  .swiper-pagination-bullet-active {
-    height: 24px;
-  }
-
-  .footer {
-    column-gap: 0;
-    left: unset;
-    bottom: unset;
-    top: 20px;
-    right: -30px;
-    padding: 0;
-    border-radius: 0;
-    border: 0;
-    background-color: transparent;
-    box-shadow: unset;
-    -webkit-backdrop-filter: blur(0);
-    backdrop-filter: blur(0);
-  }
-
-  .feature,
-  hr {
-    display: none;
-  }
-}
-  </style>
-</head>
-
-<body>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="content" data-content="one">
-          <h1>Rise Of Nations</h1>
-          <p>
-Rise of Nations is a mod with the objective of creating an unforgettable century of gameplay. (1900-2060) It is a remake of Totaler Krieg 2030.It has evolved ever since than to be something more.</p>
-        </div>
-        <div class="background" data-item="one"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="two">
-          <h1>Exclusive Updates</h1>
-          <p>Visit this page to get exclusive updates not seen on the Rise Of Nations Steam Page OR the discrod. Be sure to bookmark this page for more.</p>
-        </div>
-        <div class="background" data-item="two"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="three">
-          <h1>Meet the devlepors</h1>
-          <p>If you want to learn more about the team you can! Just visit the discord linked in the FaQ or steampage, one lucky discord member can have a chance to win an exclusive interview with harry.</p>
-        </div>
-        <div class="background" data-item="three"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="four">
-          <h1>Want to contribute</h1>
-          <p>You can! Even if you don't want to apply if you have a old or unused focus tree/mod and want it revived you can join the discord to inquire more details from it.</p>
-        </div>
-        <div class="background" data-item="four"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="five">
-          <h1>Want content from the mod?</h1>
-          <p>In some situtions we may be willing to share stuff we made to give back to the community you can join the discord and ask for more details.</p>
-        </div>
-        <div class="background" data-item="five"></div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div class="footer">
-    <div class="feature">
-      <i class="fa-solid fa-house"></i>
-      <div>
-        <p>Next Dev Diary</p>
-        <small>5 days</small>
-      </div>
-    </div>
-    <hr />
-    <div class="feature">
-      <i class="fa-solid fa-headphones"></i>
-      <div>
-        <p>Next Update</p>
-        <small>Soon</small>
-      </div>
-    </div>
-    <hr />
-    <div class="feature">
-      <i class="fa-solid fa-clock"></i>
-      <div>
-        <p>Explore The Site</p>
-		<small>Check out the <a href="RON_faq.html">Credits</a> page and explore the site</small>
-
-      </div>
-    </div>
-    <hr />
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" class="btn">
-  Download Now
-</a>
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper-container", {
-      direction: "vertical",
-      effect: "fade",
-      speed: 1000,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      mousewheel: {
-        invert: false,
-        forceToAxis: false,
-        thresholdDelta: 50,
-        sensitivity: 1,
-      },
-      on: {
-        slideChange: function () {
-          this.slides.forEach((slide) => {
-            let background = slide.querySelector(".background");
-            if (background) {
-              background.classList.remove("animation");
-            }
-          });
-          let activeSlide = this.slides[this.activeIndex];
-          let background = activeSlide.querySelector(".background");
-          if (background) {
-            background.classList.add("animation");
-          }
-        },
-      },
-    });
-  </script>
-</body>
+<html>
+   <link rel="stylesheet" href="RON_apply.css">
+   <link rel="stylesheet" href="RON_dm_lm.css">
+   <head>
+      <title>Rise of Nations</title>
+      <link rel="icon" type="image/x-icon" href="ron.ico">
+   </head>
+   <body>
+      <header>  
+      <h1>Rise of Nations</h1>
+      <ul>
+        <a href=RON_homepage.html>Homepage</a>
+        <a href=RON_apply.html>Applications</a>
+        <a href=RON_changelogs.html>Changelogs</a>
+        <a href=RON_credits.html>Credits</a>
+        <a href=RON_diaries.html>Dev Diaries</a>
+        <a href=RON_faq.html>FAQ</a>
+      </ul>
+      <nav>
+         <a href=https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968>Steam</a>
+         <a href=https://discord.com/invite/wW3nmgP4Vd>Discord</a>
+         <a href=RON_git_download.html>GitHub</a>
+         <a href=https://www.youtube.com/channel/UCgWkliJFfrhy4yHePtkmrzw>YouTube</a>
+         <a href=https://twitter.com/TK20302>Twitter/X</a>
+      </nav>
+      </header>
+      <main>
+         <div class=”row”>
+            <p>
+               <div>Rise of Nations is a mod lovingly made by the Hoi4 Community with the objective of creating an unforgettable century and half of gameplay (1900-2060). It is the continuation of Totaler Krieg 2030.</div>
+               <h2>Version</h2>
+               <div>HOI4 Version: 1.15.1 Kaiser</div>
+               <div>MOD Version: 1.6.1 Final Strike</div>
+               <h1>Features</h1>
+               <div>- WW1 Start Dates: 1910</div>
+               <div>- WW2 Start Dates: 1933 & 1936</div>
+               <div>- Massive Technology Tree 1900-2060</div>
+               <div>- Massive Generic Focus Tree (1900-2060)</div>
+               <div>- Reworked Law System with much more immersion.</div>
+               <div>- Hundreds of Hand Crafted Realistic Portraits</div>
+               <div>- Integrated Expert AI</div>
+               <div>- Zombie Mode & Anti-Zombie Technology</div>
+               <div>- Over 100 Formable Nations</div>
+               <div>- German, Italian and Japanese Puppet Decisions</div>
+               <div>- Hundreds of New Advisors and Companies</div>
+               <div>- Hundreds of Unique Units with Custom Icons</div>
+               <div>- Hundreds of New Decisions and Events</div>
+               <div>- Hundreds of New Generals</div>
+               <div>- 60 WW2 Focus Trees</div>
+               <div>- Space Tech and Space Race Decisions and Events</div>
+               <div>- Decolonization Decisions and Events</div>
+               <div>- Coup Events</div>
+               <h1>Dev Team</h1>
+               <div>TK2030</div>
+               <div>DexertCz</div>
+               <div>stuffi3000</div>
+               <div>Antmrt</div>
+               <div>Braineac2000</div>
+               <div>Mikegent</div>
+               <div>Harry (AKA Dr.SuiuS)</div>
+               <div>Mstae67</div>
+               <div>PoorBananaMan27 (AKA GamingBananna563)</div>
+               <div>Bob1234567890</div>
+               <div>nikolafun</div>
+               <div>idk_pineapple</div>
+               <div>Mieserere mei, Deus</div>
+               <div>lehmspielt</div>
+               <div>Sturm</div>
+               <div>Jackie</div>
+               <div>lebbrosocomunista (AKA simo)</div>
+               <div>Luftwaffle17</div>
+               <div>cameron</div>
+               <div>Xaelor</div>
+               <div>Alrendaxe</div>
+               <div>Abyssal Lord</div>
+               <div>lele48</div>
+               <div>The Devil King Lucifer</div>
+               <div>Mord</div>
+            </p>
+      </main>
+      <footer>
+      </footer>
+    </body>
 </html>

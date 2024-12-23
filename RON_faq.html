@@ -1,319 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" type="image/x-icon" href="ron.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Section</title>
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="RON_FAQ.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <!-- Navigation Tabs -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Rise Of Nations</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="RON_homepage.html">Homepage</a>
-                </li>			
-                <li class="nav-item active">
-                    <a class="nav-link" href="RON_faq.html">FAQ <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="RON_credits.html">Credits</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="RON_changelogs.html">Change Log</a>
-                </li>				
-                <li class="nav-item">
-                    <a class="nav-link" href="RON_diaries.html">Dev Diaries</a>
-                </li>				
-                <li class="nav-item">
-                    <a class="nav-link" href="RON_apply.html">Contact/Apply</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- FAQ Section -->
-<section class="faq-section">
-    <div class="container">
-        <div class="row">
-            <!-- ***** FAQ Start ***** -->
-            <div class="col-md-6 offset-md-3">
-                <div class="faq-title text-center pb-3">
-                    <h1>Frequently Asked Questions</h1>
-                </div>
-            </div>
-            <div class="col-md-6 offset-md-3">
-                <div class="faq" id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-1">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="false" data-aria-controls="faqCollapse-1">
-                                    <span class="badge">1</span> WHY ARE SOME START DATES "EMPTY"?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>We are working on the eras one at a time, they will be completed one at a time in chronological order. A mod this size doesn't just poof out of thin air, it takes hundreds of hours to make. Keep in mind we are not just replacing Mussolini with a Cat, we are taking a Game that's 12 years long, and expanding it to 160 years long.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-2">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                    <span class="badge">2</span> OMG YOU STOLE STUFF FROM OTHER MODS!!
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>The whole purpose of modding is sharing. If we do decide to use something from another mod, it will only be with their express permission, backed by a screenshot. We are not competing with any other mods, as we are a timeline expansion mod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-3">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                    <span class="badge">3</span> HOW DO I CHANGE TO THE NEXT ERA FOCUS TREES?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Focus trees are reloaded each era by an era change event, which is triggered by decision. You can trigger it manually when the conditions are set, but don't worry, if you don't the AI will do it for you.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-4">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                    <span class="badge">4</span> I CAN’T CHANGE SUCH AND SUCH LAW!
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>If you can’t change a law, you either do not meet the requirements, the law changes automatically by event, or it hasn’t been implemented yet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-5">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                    <span class="badge">5</span> MANDARIN CHINESE TRANSLATION WHEN?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Due to the massive amount of work to be done to bring this project to completion, any translation that gets done, will be done by the community. We have enough on our hands.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-6">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
-                                    <span class="badge">6</span> OMG RISE OF NATIONS IS THE NAME OF A GAME!
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
-                            <div class="card-body">
-                                <p><a href="https://en.wikipedia.org/wiki/Fair_use">Fair Use</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-7">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
-                                    <span class="badge">7</span> CUSTOM FOCUS TREE FOR X COUNTRY WHEN?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>We are gonna do an event, decision, and focus tree expansion for each era, one at a time. Please check #planned-updates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-8">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="false" data-aria-controls="faqCollapse-8">
-                                    <span class="badge">8</span> HOW CAN I JOIN THE DEV TEAM/BECOME A HELPER?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>90% of people who volunteer don't do jack shit. So please think twice before joining. If you are serious about joining, then please check the: #read-before-applying channel.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-9">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9" data-aria-expanded="false" data-aria-controls="faqCollapse-9">
-                                    <span class="badge">9</span> WHY ARE THE RULES SO STRICT ON OUR DISCORD?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>We have bumped our security settings to the max in response to relentless trolling.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-10">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10" data-aria-expanded="false" data-aria-controls="faqCollapse-10">
-                                    <span class="badge">10</span> WHY ARE THERE MODS IN THE CREDITS LIST THAT HAVEN'T BEEN USED?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>The mods in the credit list are mods that gave us permission back when we were Totaler Krieg. Although we plan on redoing everything ourselves this time around, we keep them on our credit list to honor their generosity and good spirit, which is what modding is all about.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-11">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-11" data-aria-expanded="false" data-aria-controls="faqCollapse-11">
-                                    <span class="badge">11</span> WHAT ARE YOU WORKING ON RIGHT NOW?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-11" class="collapse" aria-labelledby="faqHeading-11" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>We are gonna expand each era one at a time, and add focuses/events. Please check the Planned Updates Channel for more info.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-12">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-12" data-aria-expanded="false" data-aria-controls="faqCollapse-12">
-                                    <span class="badge">12</span> WHAT SCENARIOS DO YOU RECOMMEND?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-12" class="collapse" aria-labelledby="faqHeading-12" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>1900, 1910, 1919, and 1933</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-13">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-13" data-aria-expanded="false" data-aria-controls="faqCollapse-13">
-                                    <span class="badge">13</span> WHAT ARE THE DIFFERENT ERAS?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-13" class="collapse" aria-labelledby="faqHeading-13" data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>- Dawn Of A New Century (DNC): 1900-1909 (9 Years)</li>
-                                    <li>- World War 1 (WW1): 1910-1918 (8 Years)</li>
-                                    <li>- Interwar (INT): 1919-1932 (13 Years)</li>
-                                    <li>- World War 2 (WW2): 1933-1948 (15 Years)</li>
-                                    <li>- Early Cold War (ECW): 1949-1979 (30 Years)</li>
-                                    <li>- Late Cold War (LCW): 1980-1999 (19 Years)</li>
-                                    <li>- Modern Day (MD): 2000-2030 (30 Years)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-14">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-14" data-aria-expanded="false" data-aria-controls="faqCollapse-14">
-                                    <span class="badge">14</span> I CAN'T LOAD THE MOD, IT KEEPS CRASHING!
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-14" class="collapse" aria-labelledby="faqHeading-14" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Some people get this issue, while we do not know what is causing it, we can offer you a solution:</p>
-                                <ul>
-                                    <li>- Open Steam</li>
-                                    <li>- Right Click Hoi4 and go to Properties</li>
-                                    <li>- In Launch Parameters type '-opengl' without the quotes</li>
-                                    <li>- Run the game as usual</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-15">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-15" data-aria-expanded="false" data-aria-controls="faqCollapse-15">
-                                    <span class="badge">15</span> THE MOD DOESN'T LOAD, IT LOADS VANILLA INSTEAD!
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-15" class="collapse" aria-labelledby="faqHeading-15" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>If the mod launches vanilla, make sure that it is inside the playset you are currently using. If it still doesn't work, clear your user folder. If that still doesn't work, unsubscribe from the mod, wait a few minutes, then resubscribe.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-16">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-16" data-aria-expanded="false" data-aria-controls="faqCollapse-16">
-                                    <span class="badge">16</span> WILL YOU ADD AN ECONOMY/TRADE SYSTEM?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-16" class="collapse" aria-labelledby="faqHeading-16" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Maybe, we can't guarantee adding such a system as it is quite hard to balance and to find historical data ranging from 1900-Today to make sure it goes more or less historical. If you have any knowledge about economics and/or if you have good sources, please contact us.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-17">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-17" data-aria-expanded="false" data-aria-controls="faqCollapse-17">
-                                    <span class="badge">17</span> WILL YOU MAKE GFX UPDATES?
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-17" class="collapse" aria-labelledby="faqHeading-17" data-parent="#accordion">
-                            <div class="card-body">
-                                <p>Yes, we will be adding new GFX, but as we are working on the timeline one step at a time, you can expect that the game will be a bit barren at times.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** FAQ End ***** -->
-        </div>
-    </div>
-</section>
-
-</body>
+<html>
+   <head>
+      <link rel="stylesheet" href="RON_apply.css">
+      <link rel="stylesheet" href="RON_dm_lm.css">
+      <head>
+         <title>Rise of Nations: FAQ</title>
+         <link rel="icon" type="image/x-icon" href="ron.ico">
+      </head>
+      <body>
+         <header>  
+         <h1>Rise of Nations FAQ</h1>
+      <ul>
+        <a href=RON_homepage.html>Homepage</a>
+        <a href=RON_apply.html>Applications</a>
+        <a href=RON_changelogs.html>Changelogs</a>
+        <a href=RON_credits.html>Credits</a>
+        <a href=RON_diaries.html>Dev Diaries</a>
+        <a href=RON_faq.html>FAQ</a>
+    </ul>
+      <nav>
+         <a href=https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968>Steam</a>
+         <a href=https://discord.com/invite/wW3nmgP4Vd>Discord</a>
+         <a href=RON_git_download.html>GitHub</a>
+         <a href=https://www.youtube.com/channel/UCgWkliJFfrhy4yHePtkmrzw>YouTube</a>
+         <a href=https://twitter.com/TK20302>Twitter/X</a>
+      </nav>
+      </header>
+      <main>
+         <div class=”row”>
+            <p>
+               <h1>Frequently Asked Questions</h1>
+               <h3>1) WHY ARE SOME START DATES "EMPTY"?</h1>
+                  <div>We are working on the eras one at a time, they will be completed one at a time in chronological order. A mod this size doesn't just poof out of thin air, it takes hundreds of hours to make. Keep in mind we are not just replacing Mussolini with a Cat, we are taking a Game thats 12 years long, and expanding it to 160 years long.</div>
+                  <h3>2) OMG YOU STOLE STUFF FROM OTHER MODS!!</h1>
+                  <div>The whole purpose of modding is sharing. If we do decide to use something from another mod, it will only be with their express permission, backed by a screenshot. We are not competing with any other mods, as we are a timeline expansion mod.</div>
+                  <h3>3) HOW DO I CHANGE TO THE NEXT ERA FOCUS TREES?</h1>
+                  <div>Focus trees are reloaded each era by an era change event, which is triggered by decision. You can trigger it manually when the conditions are set, but don't worry, if you don't the AI will do it for you.</div>
+                  <h3>4) I CAN’T CHANGE SUCH AND SUCH LAW!</h1>
+                  <div>If you can’t change a law you either do not meet the requirements, the law changes automatically by event, or it hasn’t been implemented yet.</div>
+                  <h3>5) MANDARIN CHINESE TRANSLATION WHEN?</h1>
+                  <div>Due to the massive amount of work to be done to bring this project to completion, any translation that gets done, will be done by the community. We have enough on our hands.</div>
+                  <h3>6) OMG RISE OF NATIONS IS THE NAME OF A GAME!</h1>
+                  <div><a href=https://en.wikipedia.org/wiki/Fair_use>Fair Use</a></div>
+                  <h3>7) CUSTOM FOCUS TREE FOR X COUNTRY WHEN?</h1>
+                  <div>We are gonna do a event, decision and focus tree expansion for each era, one at a time. Please check #planned-updates</div>
+                  <h3>8) HOW CAN I JOIN THE DEV TEAM/BECOME A HELPER?</h1>
+                  <div>90% of people who volunteer don't do jack shit. So please think twice before joining. If you are serious about joining, then please check the: #read-before-applying channel.</div>
+                  <h3>9) WHY ARE THE RULES SO STRICT ON OUR DISCORD?</h1>
+                  <div>We have bumped our security settings to the max in response to relentless trolling.</div>
+                  <h3>10) WHY ARE THERE MODS IN THE CREDITS LIST THAT HAVEN'T BEEN USED?</h1>
+                  <div>The mods in the credit list are mods that gave us permission back when we were Totaler Krieg. Although we plan on redoing everything ourselves this time around, we keep them on our credit list to honor their generosity and good spirit, which is what modding is all about.</div>
+                  <h3>11) WHAT ARE YOU WORKING ON RIGHT NOW?</h1>
+                  <div>We are gonna expand each era one at a time, and add focuses/events. Please check the Planned Updates Channel for more info.</div>
+                  <h3>12) WHAT SCENARIOS DO YOU RECOMMEND?</h1>
+                  <div>1900, 1910, 1919 and 1933</div>
+                  <h3>13) WHAT ARE THE DIFFERENT ERAS ?</h1>
+                  <div>- Dawn Of A New Century (DNC): 1900-1909 (9 Years)</div>
+                  <div>- World War 1 (WW1): 1910-1918 (8 Years)</div>
+                  <div>- Interwar (INT): 1919-1932 (13 Years)</div>
+                  <div>- World War 2 (WW2) : 1933-1948 (15 Years)</div>
+                  <div>- Early Cold War (ECW): 1949-1979 (30 Years)</div>
+                  <div>- Late Cold War (LCW): 1980-1999 (19 Years)</div>
+                  <div>- Modern Day (MD): 2000-2030 (30 Years)</div>
+                  <h3>14) I CAN'T LOAD THE MOD, IT KEEPS CRASHING!</h1>
+                  <div>Some people get this issue, while we do not know what is causing it, we can offer you a solution:</div>
+                  <div>- Open Steam</div>
+                  <div>- Right Click Hoi4 and go to Properties</div>
+                  <div>- In Launch Parameters type '-opengl' without the quotes</div>
+                  <div>- Run the game as usual</div>
+                  <h3>15) THE MOD DOESN'T LOAD, IT LOADS VANILLA INSTEAD!</h1>
+                  <div>If the mod launches vanilla make sure that it is inside the playset you are currently using. If it still doesn't work, clear you user folder. If that still doesn't work, unsubscribe from the mod, wait a few minutes, then resubscribe.</div>
+                  <h3>16) WILL YOU ADD AN ECONOMY/TRADE SYSTEM?</h1>
+                  <div>Maybe, we can't guarantee adding such a system as it is quite hard to balance and to find historical data ranging from 1900-Today to make sure it goes more or less historical. If you have any knowledge about economics and/or if you have good sources, please contact us</div>
+                  <h3>17) WILL YOU MAKE GFX UPDATES?</h1>
+                  <div>GFX changes are not standalone updates, we are improving icons and portraits in every update we release. Should you find any bad portrait, please report it in #bad-portraits on our Discord</div>
+                  <h3>18) I ASKED FOR ... CONTENT, BUT YOU ARE NOT WORKING ON IT!</h1>
+                  <div>We are working on what the community wants, we will do regular polls to ask what the next update should be. Make sure to participate to the polls. </div>
+            </p>
+      </main>
+      <footer>
+      </footer>
+    </body>
 </html>
