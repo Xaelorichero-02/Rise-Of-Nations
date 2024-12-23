@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rise Of Nations</title>
-  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap" rel="stylesheet">
-  <style>
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
 
 * {
@@ -94,31 +85,31 @@ body {
 /* background */
 
 .background[data-item="one"] {
-  background: url(1.png);
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/dd28eb02-d6b1-401e-bc10-aead024e9ebf);
   background-size: cover;
   background-position: 50% 40%;
 }
 
 .background[data-item="two"] {
-  background: url(https://cdn.discordapp.com/attachments/1284036688238215228/1313245664418861096/hoi4_T5ywwn3pdd.gif?ex=676b1e55&is=6769ccd5&hm=e52bedafee124325a918375ffb625a9b8c811c8c9e5b8bad4e9d3cd08106dbc0&);
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/fc70e01c-17f9-4e74-a967-f039285524c5);
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .background[data-item="three"] {
-  background: url(harry.gif);
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4e3edcf1-1b68-408f-87e2-ee9fd477bf87);
   background-size: cover;
   background-position: 50% 40%;
 }
 
 .background[data-item="four"] {
-  background: url(https://cdn.discordapp.com/attachments/1303462718212280330/1320823643382612129/image.png?ex=676b0060&is=6769aee0&hm=680770fd2039a0243649ead5c1e1a0b9ce1ebfdb50d0c2ffba38188d4e003eb7&);
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b772933f-6340-4c95-8d06-d809c4c9b739);
   background-size: cover;
   background-position: 50% 60%;
 }
 
 .background[data-item="five"] {
-  background: url(https://cdn.discordapp.com/attachments/1303462718212280330/1320084522154332252/image.png?ex=676af304&is=6769a184&hm=d5a4ecee66750c7af56f725f625e5040b17ac29b571bfdab4c8c30da2874d50d&);
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9f0fab6b-c28d-47e9-80f0-868e00562c3f);
   background-size: cover;
   background-position: 50% 40%;
 }
@@ -376,118 +367,3 @@ body {
     display: none;
   }
 }
-  </style>
-</head>
-
-<body>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="content" data-content="one">
-          <h1>Rise Of Nations</h1>
-          <p>
-Rise of Nations is a mod with the objective of creating an unforgettable century of gameplay. (1900-2060) It is a remake of Totaler Krieg 2030.It has evolved ever since than to be something more.</p>
-        </div>
-        <div class="background" data-item="one"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="two">
-          <h1>Exclusive Updates</h1>
-          <p>Visit this page to get exclusive updates not seen on the Rise Of Nations Steam Page OR the discrod. Be sure to bookmark this page for more.</p>
-        </div>
-        <div class="background" data-item="two"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="three">
-          <h1>Meet the devlepors</h1>
-          <p>If you want to learn more about the team you can! Just visit the discord linked in the FaQ or steampage, one lucky discord member can have a chance to win an exclusive interview with harry.</p>
-        </div>
-        <div class="background" data-item="three"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="four">
-          <h1>Want to contribute</h1>
-          <p>You can! Even if you don't want to apply if you have a old or unused focus tree/mod and want it revived you can join the discord to inquire more details from it.</p>
-        </div>
-        <div class="background" data-item="four"></div>
-      </div>
-      <div class="swiper-slide">
-        <div class="content" data-content="five">
-          <h1>Want content from the mod?</h1>
-          <p>In some situtions we may be willing to share stuff we made to give back to the community you can join the discord and ask for more details.</p>
-        </div>
-        <div class="background" data-item="five"></div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div class="footer">
-    <div class="feature">
-      <i class="fa-solid fa-house"></i>
-      <div>
-        <p>Next Dev Diary</p>
-        <small>5 days</small>
-      </div>
-    </div>
-    <hr />
-    <div class="feature">
-      <i class="fa-solid fa-headphones"></i>
-      <div>
-        <p>Next Update</p>
-        <small>Soon</small>
-      </div>
-    </div>
-    <hr />
-    <div class="feature">
-      <i class="fa-solid fa-clock"></i>
-      <div>
-        <p>Explore The Site</p>
-		<small>Check out the <a href="RON_faq.html">Credits</a> page and explore the site</small>
-
-      </div>
-    </div>
-    <hr />
-<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" class="btn">
-  Download Now
-</a>
-  </div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper-container", {
-      direction: "vertical",
-      effect: "fade",
-      speed: 1000,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      mousewheel: {
-        invert: false,
-        forceToAxis: false,
-        thresholdDelta: 50,
-        sensitivity: 1,
-      },
-      on: {
-        slideChange: function () {
-          this.slides.forEach((slide) => {
-            let background = slide.querySelector(".background");
-            if (background) {
-              background.classList.remove("animation");
-            }
-          });
-          let activeSlide = this.slides[this.activeIndex];
-          let background = activeSlide.querySelector(".background");
-          if (background) {
-            background.classList.add("animation");
-          }
-        },
-      },
-    });
-  </script>
-</body>
-</html>
