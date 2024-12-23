@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="icon" type="image/x-icon" href="ron.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rise Of Nations</title>
   <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="homepage_u.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
 
@@ -106,7 +112,7 @@ body {
 }
 
 .background[data-item="three"] {
-  background: url(harry.gif);
+  background: url(https://cdn.discordapp.com/attachments/1303462718212280330/1320886045491073034/crazy.gif?ex=676b3a7e&is=6769e8fe&hm=60f62b1a835b4b196bc3c59849893cc2c1f0f137fdc2022237ff6918ddd0d667&);
   background-size: cover;
   background-position: 50% 40%;
 }
@@ -380,7 +386,35 @@ body {
 </head>
 
 <body>
-
+    <!-- Navigation Tabs -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Rise Of Nations</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+               <a class="nav-link" href="RON_homepage.html">Homepage <span class="sr-only">(current)</span></a>
+            </li>			
+            <li class="nav-item">
+                <a class="nav-link" href="RON_faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="RON_changelogs.html">Change Log</a>
+            </li>				
+            <li class="nav-item">
+                <a class="nav-link" href="RON_diaries.html">Dev Diaries</a>
+            </li>				
+            <li class="nav-item">
+                <a class="nav-link" href="RON_apply.html">Apply</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="RON_credits.html">Credits</a>
+           </li>
+          </ul>
+      </div>
+  </nav>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -444,7 +478,7 @@ Rise of Nations is a mod with the objective of creating an unforgettable century
       <i class="fa-solid fa-clock"></i>
       <div>
         <p>Explore The Site</p>
-		<small>Check out the <a href="RON_faq.html">Credits</a> page and explore the site</small>
+		<small>Check out the <a href="RON_faq.html">FAQ</a> page and explore the site</small>
 
       </div>
     </div>
