@@ -1,56 +1,173 @@
 <!DOCTYPE html>
-<html>
-   <link rel="stylesheet" href="RON_apply.css">
-   <link rel="stylesheet" href="RON_dm_lm.css">
-   <head>
-      <title>Rise of Nations: GitHub</title>
-      <link rel="icon" type="image/x-icon" href="ron.ico">
-   </head>
-   <body>
-      <header>  
-      <h1>Rise of Nations GitHub</h1>
-      <ul>
-        <a href=RON_homepage.html>Homepage</a>
-        <a href=RON_apply.html>Applications</a>
-        <a href=RON_changelogs.html>Changelogs</a>
-        <a href=RON_credits.html>Credits</a>
-        <a href=RON_diaries.html>Dev Diaries</a>
-        <a href=RON_faq.html>FAQ</a>
-      </ul>
-      <nav>
-         <a href=https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968>Steam</a>
-         <a href=https://discord.com/invite/wW3nmgP4Vd>Discord</a>
-         <a href=RON_git_download.html>GitHub</a>
-         <a href=https://www.youtube.com/channel/UCgWkliJFfrhy4yHePtkmrzw>YouTube</a>
-         <a href=https://twitter.com/TK20302>Twitter/X</a>
-      </nav>
-      </header>
-      <main>
-         <div class=”row”>
-            <p>
-               <h1>GitHub links:</h1>
-               <h2><a href=https://github.com/DexertCz/Rise-of-Nations>Rise of Nations</a></h2>
-               <h2><a href=https://github.com/Xaelorichero-02/Rise-Of-Nations>Rise of Nations Website</a></h2>
-               <h1>RON GitHub Download Guide</h1>
-               <h2>Step 1</h2>
-               <div>Download and Install <a href=https://desktop.github.com>Github Desktop</a></div>
-               <h2>Step 2</h2>
-               <div>Clone the <a href=https://github.com/stuffi3000/Rise-of-Nations>RoN Repository</a> to this path on Windows: "C:\Users\%USERNAME%\Documents\Paradox Interactive\Hearts of Iron IV\mod".</div>
-               <h3>Debugging Step 2</h3>
-               <div>If you're unable to clone the repository download <a href=https://drive.google.com/file/d/1DVAcPJZgwbCRw4sBKPnFyxEQlAV5T9K2/view?usp=sharing>this file</a> and put it into: "C:\Users\%USERNAME%\Documents\Paradox Interactive\Hearts of Iron IV\mod\Rise-of-Nations".</div>
-               <h2>Step 3</h2>
-               <div>Download the <a href=https://cdn.discordapp.com/attachments/1303462718212280330/1318671492711714837/Rise-of-nations.mod?ex=67632c07&is=6761da87&hm=29e2af74b0cba29a0e1b1593dc2e4c9cb18fd59848bbf5cced7853e0f2fc8d5a&>mod descriptor file</a> and put it into the: "C:\Users\%USERNAME%\Documents\Paradox Interactive\Hearts of Iron IV\mod" folder and replace "%USERNAME%" in the file with your local account name on your device.</div>
-               <h2>Results</h2>
-               <div>You should have these two files in your mod folder</div>
-               <img src="git/image.png" width="900">
-               <h2>Play</h2>
-               <div>Open your HOI4 Paradox Launcher and select Rise of Nations with the folder icon (not steam logo or RoN logo icon)</div>
-               <img src="git/image - Copy.png" width="900">
-               <h2>Still having issues?</h2>
-               <div>If you still have any issues (loading vanilla, crashing to desktop) go on <a href=https://discord.com/invite/wW3nmgP4Vd>our Discord</a> to #technical-problems and ping any active developer</div>
-            </p>
-      </main>
-      <footer>
-      </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Download - Rise of Nations</title>
+    <link rel="icon" href="ron.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dev_diary.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35b695ae3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Rise_of_Nations.gif" alt="Rise of Nations Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#dev-diaries">Dev Diaries</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="RON_faq.html">FAQ</a></li>
+                <li><a href="RON_apply.html" class="apply-btn">Join Us</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="dev-diary">
+            <div class="section-header">
+                <h1>GitHub Download Instructions</h1>
+                <div class="underline"></div>
+                <p class="section-description">How to download and install Rise of Nations from GitHub</p>
+            </div>
+            
+            <div class="diary-content">
+                <h3>Why Download from GitHub?</h3>
+                <p>While most players prefer to download Rise of Nations from the Steam Workshop, there are several reasons you might want to get the mod directly from our GitHub repository:</p>
+                <ul>
+                    <li>You want the latest development version with the newest features</li>
+                    <li>You want to contribute to the mod's development</li>
+                    <li>You're having issues with the Steam Workshop version</li>
+                    <li>You want to modify the mod for personal use</li>
+                    <li>You're playing on a platform without Steam Workshop access</li>
+                </ul>
+                
+                <h3>Step 1: Download the Latest Release</h3>
+                <p>Visit our GitHub repository at <a href="https://github.com/RiseOfNationsTeam/RiseOfNations" target="_blank">https://github.com/RiseOfNationsTeam/RiseOfNations</a>.</p>
+                <p>There are two ways to download the mod:</p>
+                
+                <h4>Option A: Download a Release (Recommended)</h4>
+                <ol>
+                    <li>Click on the "Releases" section on the right side of the repository page</li>
+                    <li>Find the latest release (usually at the top)</li>
+                    <li>Download the "Source code (zip)" file</li>
+                </ol>
+                
+                <h4>Option B: Clone the Repository (For developers)</h4>
+                <ol>
+                    <li>If you have Git installed, you can clone the repository using:</li>
+                    <code>git clone https://github.com/RiseOfNationsTeam/RiseOfNations.git</code>
+                </ol>
+                
+                <h3>Step 2: Extract the Files</h3>
+                <p>If you downloaded the ZIP file, extract it to a temporary location on your computer.</p>
+                
+                <h3>Step 3: Locate Your HOI4 Mods Folder</h3>
+                <p>The Hearts of Iron IV mods folder is typically located at:</p>
+                <ul>
+                    <li>Windows: <code>C:\Users\[YourUsername]\Documents\Paradox Interactive\Hearts of Iron IV\mod</code></li>
+                    <li>Mac: <code>~/Documents/Paradox Interactive/Hearts of Iron IV/mod</code></li>
+                    <li>Linux: <code>~/.local/share/Paradox Interactive/Hearts of Iron IV/mod</code></li>
+                </ul>
+                
+                <h3>Step 4: Install the Mod</h3>
+                <p>There are two components you need to move:</p>
+                <ol>
+                    <li>Create a new folder called "riseofnations" in your HOI4 mods folder</li>
+                    <li>Copy all the files from the extracted download into this new folder</li>
+                    <li>Copy the file "riseofnations.mod" directly into your HOI4 mods folder (not inside the riseofnations folder)</li>
+                </ol>
+                
+                <div class="feature-box">
+                    <h4>Important Note:</h4>
+                    <p>You may need to edit the path in the .mod file to match your system. Open "riseofnations.mod" in a text editor and ensure the path points to your mod folder location.</p>
+                    <p>Example: <code>path="mod/riseofnations"</code></p>
+                </div>
+                
+                <h3>Step 5: Launch the Game</h3>
+                <ol>
+                    <li>Start Hearts of Iron IV</li>
+                    <li>Click on "Mods" in the launcher</li>
+                    <li>Find and enable "Rise of Nations" in the list</li>
+                    <li>Click "Play"</li>
+                </ol>
+                
+                <h3>Troubleshooting</h3>
+                <p>If you encounter any issues:</p>
+                <ul>
+                    <li><strong>Mod not appearing in launcher:</strong> Make sure the .mod file is in the correct location and has the correct path setting</li>
+                    <li><strong>Game crashes on startup:</strong> Ensure you have the correct HOI4 version for the mod version you downloaded</li>
+                    <li><strong>Missing content:</strong> Verify that all files were extracted correctly and placed in the proper folders</li>
+                </ul>
+                
+                <p>For additional help, join our <a href="https://discord.gg/BYuQP34wVm" target="_blank">Discord server</a> and ask in the support channels.</p>
+                
+                <div class="cta-buttons" style="text-align: center; margin-top: 3rem;">
+                    <a href="https://github.com/RiseOfNationsTeam/RiseOfNations/releases" target="_blank" class="primary-btn">
+                        <i class="fab fa-github"></i> Download from GitHub
+                    </a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" target="_blank" class="secondary-btn">
+                        <i class="fab fa-steam"></i> Steam Workshop Version
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Rise_of_Nations.gif" alt="Rise of Nations Logo">
+                <p>Rise of Nations HOI4 Mod</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="RON_diaries.html">Dev Diaries</a></li>
+                    <li><a href="RON_faq.html">FAQ</a></li>
+                    <li><a href="RON_changelogs.html">Changelogs</a></li>
+                    <li><a href="RON_credits.html">Credits</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>External Links</h3>
+                <ul>
+                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" target="_blank">Steam Workshop</a></li>
+                    <li><a href="https://discord.gg/BYuQP34wVm" target="_blank">Discord</a></li>
+                    <li><a href="https://github.com/RiseOfNationsTeam/RiseOfNations" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Have questions or suggestions?</p>
+                <a href="mailto:riseofnationsmod@gmail.com">riseofnationsmod@gmail.com</a>
+                <div class="footer-social">
+                    <a href="https://discord.gg/BYuQP34wVm" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" target="_blank"><i class="fab fa-steam"></i></a>
+                    <a href="https://github.com/RiseOfNationsTeam/RiseOfNations" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rise of Nations Team. Hearts of Iron IV is a registered trademark of Paradox Interactive.</p>
+        </div>
+    </footer>
+
+    <script src="dev_diary.js"></script>
+</body>
 </html>

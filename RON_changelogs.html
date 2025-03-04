@@ -1,224 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="ron.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog History - RoN</title>
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="RON_FAQ.css">
-    <!-- Bootstrap CSS -->
-    <link href="homepage_u.css" rel="stylesheet">
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Development Diaries - Rise of Nations</title>
+    <link rel="icon" href="ron.ico" type="image/x-icon">
+    <link rel="stylesheet" href="changelogs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35b695ae3d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation Tabs -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Rise Of Nations</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                 <a class="nav-link" href="RON_homepage.html">Homepage</a>
-              </li>			
-              <li class="nav-item">
-                  <a class="nav-link" href="RON_faq.html">FAQ</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="RON_changelogs.html">Change Log <span class="sr-only">(current)</span></a>
-              </li>				
-              <li class="nav-item">
-                  <a class="nav-link" href="RON_diaries.html">Dev Diaries</a>
-              </li>				
-              <li class="nav-item">
-                  <a class="nav-link" href="RON_apply.html">Apply</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="RON_credits.html">Credits</a>
-             </li>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Rise_of_Nations.gif" alt="Rise of Nations Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#dev-diaries" class="active">Dev Diaries</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="RON_apply.html" class="apply-btn">Join Us</a></li>
             </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </nav>
+    </header>
 
-    <!-- Changelog Section -->
-<section class="faq-section">
-    <div class="container">
-        <div class="row">
-            <!-- ***** Changelog Start ***** -->
-            <div class="col-md-6 offset-md-3">
-                <div class="faq-title text-center pb-3">
-                    <h1>Full Changelog Histoey</h1>
+    <main>
+        <section class="dev-diaries">
+            <div class="section-header">
+                <h1>Development Diaries</h1>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="filter-controls">
+                <div class="search-bar">
+                    <input type="text" id="diarySearch" placeholder="Search dev diaries...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="gameplay">Gameplay</button>
+                    <button class="filter-btn" data-filter="nations">Nations</button>
+                    <button class="filter-btn" data-filter="features">Features</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
                 </div>
             </div>
-            <div class="col-md-6 offset-md-3">
-                <div class="faq" id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-1">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="false" data-aria-controls="faqCollapse-1">
-                                 Rise of Nations: Final Strike 1.6.1 (HOI4 version: 1.15.1)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Czechoslovak characters revamped (1900-1992)</div>
-                              <div>- Nazi ideologies now have a custom ideology icon</div>
-                              <h3>Bugfixes</h3>
-                              <div>- Austria-Hungary won't always go democratic on historical</div> 
-                              <div>- Alaskan Territory is not Alaksan Territory anymore</div>
-                              <div>- Ethiopia owns its own territory after 1946</div>
-                              <div>- Map mode icons now appear correctly</div>
-                              <div>- Technology icons display in the correct place</div>
-                            </div>
+            
+            <div class="diaries-grid">
+                <!-- Dev Diary 52 -->
+                <div class="diary-card" data-category="nations">
+                    <div class="diary-number">52</div>
+                    <div class="diary-info">
+                        <h3>The Tsardom of Russia</h3>
+                        <p class="diary-date">April 15, 2024</p>
+                        <p class="diary-excerpt">We're excited to announce the complete rework of the Russian Empire focus tree, with over 120 new focuses spanning multiple paths and ideologies.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Russia</span>
+                            <span class="tag">Focus Tree</span>
+                            <span class="tag">Eastern Front</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-2">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                    Rise of Nations: Final Strike 1.6.0 (HOI4 Version: 1.15)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Added Special Projects to the mod, including vanilla and new ones</div>
-                              <div>- Added inner circle for WW2 Germany</div>
-                              <div>- Added BBA states for Ethiopia</div>
-                              <div>- Added vanilla Landmarks models to the map</div>
-                              <div>- Added Propaganda campaigns for most majors during WW2, which gives different bonuses depending on the campaigns choosen</div>
-                              <div>- Added a starting GUI to choose the gameplay option, with optimisation and gameplay settings</div>
-                              <div>- Added GUI and mapmode to make formable nations easier to form</div>
-                              <div>- Added GUI and mapmode for Economic sphere mechanic</div>
-                              <div>- Added custom achievements to RoN</div>
-                              <div>- Added an economic system</div>
-                              <div>- Added Modern Day USA content (Focus tree, events and decisions)</div>
-                              <div>- Added A Focus tree for Communist China for the cold war era</div>
-                              <h3>Bugfixes</h3>
-                              <div>- New Mechanics for the cold war period</div>
-                              <div>- Fixed a lot of errors and crash issues</div>
-                              <div>- Fixed plane issues not having range assigned, or non modifiable once designed (for BBA users)</div>
-                          </div>
+                    <a href="RON_dd_52_24.html" class="read-more">Read More</a>
+                </div>
+                
+                <!-- Dev Diary 51 -->
+                <div class="diary-card" data-category="nations">
+                    <div class="diary-number">51</div>
+                    <div class="diary-info">
+                        <h3>The Japanese Empire</h3>
+                        <p class="diary-date">April 1, 2024</p>
+                        <p class="diary-excerpt">This week we're focusing on the Empire of Japan and its expanded focus tree options, including new naval mechanics and Pacific War scenarios.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Japan</span>
+                            <span class="tag">Naval Warfare</span>
+                            <span class="tag">Pacific</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-3">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                 Rise of Nations 1.5.0 (HOI4 version: 1.14.4)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Updated focus trees for South America, Italy, Austria, Germany, Manchuko</div>
-                              <h3>QoL</h3>
-                              <div>- Updated icons for modern USA</div>
-                              <h3>Bugfixes</h3>
-                              <div>- Different errors fixed, such as descriptions, and black screen</div>
-                            </div>
+                    <a href="RON_dd_51_24.html" class="read-more">Read More</a>
+                </div>
+                
+                <!-- Dev Diary 50 -->
+                <div class="diary-card" data-category="gameplay">
+                    <div class="diary-number">50</div>
+                    <div class="diary-info">
+                        <h3>Economic Overhaul</h3>
+                        <p class="diary-date">March 15, 2024</p>
+                        <p class="diary-excerpt">Our 50th dev diary presents a total rework of the economic system, with new resources, production mechanics, and trade options.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Economy</span>
+                            <span class="tag">Production</span>
+                            <span class="tag">Trade</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-4">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                   Rise of Nations 1.4.0 (HOI4 version: 1.13.5)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Added more advisors for Spain</div>
-                              <h3>Bugfixes</h3>
-                              <div>- AI should be able to paradrop</div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-5">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                 Rise of Nations: Spooky 1.3.0 (HOI4 version: 1.13.0)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- BBA Plane Rework</div>
-                              <div>- Added characters for Qing China, Nationalist China and Communist China</div>
-                              <h3>Qol</h3>
-                              <div>- The political view will no longer display the country's ideology but its sub-ideology</div>
-                              <h3>Bugfixes</h3>
-                              <div>- Volunteers can be sent</div> 
-                              <div>- Fixed CTD on focus completion, on game load and on plane creation</div>
-                              <div>- Fixed a lot of errors that were present in the mod</div>
-                            </div>
+                    <a href="RON_dd_50_24.html" class="read-more">Read More</a>
+                </div>
+                
+                <!-- Dev Diary 49 -->
+                <div class="diary-card" data-category="features">
+                    <div class="diary-number">49</div>
+                    <div class="diary-info">
+                        <h3>Cold War Mechanics</h3>
+                        <p class="diary-date">March 1, 2024</p>
+                        <p class="diary-excerpt">Introducing new mechanics for the Cold War era, including espionage networks, proxy wars, and nuclear deterrence systems.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Cold War</span>
+                            <span class="tag">Espionage</span>
+                            <span class="tag">Nuclear</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-6">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
-                                 Rise of Nations 1.2.0 (HOI4 version: 1.12.4)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Improved Japanese and Chinese WW2 focus trees</div>
-                              <div>- Added Scandinavian advisors</div>
-                              <h3>QoL</h3>
-                              <div>- Added a Formable Nation map mode</div>
-                              <h3>Bugfixes</h3>
-                              <div>- Fixed states required for formable nations</div> 
-                              <div>Alaskan Territory is not Alaksan Territory anymore</div>
-                              <div>Ethiopia owns its own territory after 1946</div>
-                              <div>Map mode icons now appear correctly</div>
-                              <div>Technology icons display in the correct place</div>
-                            </div>
+                    <a href="RON_dd_49_24.html" class="read-more">Read More</a>
+                </div>
+                
+                <!-- More Dev Diaries would be added here -->
+                <div class="diary-card" data-category="technical">
+                    <div class="diary-number">48</div>
+                    <div class="diary-info">
+                        <h3>Performance Improvements</h3>
+                        <p class="diary-date">February 15, 2024</p>
+                        <p class="diary-excerpt">This diary covers major performance optimizations, AI improvements, and technical updates to reduce late-game lag.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Performance</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Technical</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="faqHeading-7">
-                            <div class="mb-0">
-                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
-                                 Rise of Nations 1.1.0 (HOI4 version: 1.12.4)
-                                </h5>
-                            </div>
-                        </div>
-                        <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
-                            <div class="card-body">
-                              <h3>Additions</h3>
-                              <div>- Added Strategic Nuclear Missile strikes</div>
-                              <div>- Added interface at game startup to allow for easy option and gamemodes selection</div>
-                              <div>- Improved influence over Chinese Empire, countries are now able to claim their concessions in china</div>
-                              <h3>Bugfixes</h3>
-                              <div>- Changed the way events are loaded in, which should result in performance improvement</div> 
-                              <div>- Added missing NSB/BBA defines which caused crash</div>
-                              <div>- Fixed Germany having all of its cores when being released through a event during the cold war</div>
-                              <div>- Fixed CTD caused by RAJ oob loaded by a focus</div>
-                              <div>- Fixed Multiple oobs that caused CTDs on loading a game</div>
-                           </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                
+                <div class="diary-card" data-category="nations">
+                    <div class="diary-number">47</div>
+                    <div class="diary-info">
+                        <h3>United Kingdom Rework</h3>
+                        <p class="diary-date">February 1, 2024</p>
+                        <p class="diary-excerpt">Exploring the new United Kingdom focus tree with colonial management, Commonwealth relations, and European diplomacy.</p>
+                        <div class="diary-tags">
+                            <span class="tag">United Kingdom</span>
+                            <span class="tag">Commonwealth</span>
+                            <span class="tag">Colonialism</span>
                         </div>
                     </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                
+                <div class="diary-card" data-category="features">
+                    <div class="diary-number">46</div>
+                    <div class="diary-info">
+                        <h3>Political System Rework</h3>
+                        <p class="diary-date">January 15, 2024</p>
+                        <p class="diary-excerpt">A complete overhaul of the political systems, introducing dynamic elections, coalitions, and policy decisions.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Politics</span>
+                            <span class="tag">Democracy</span>
+                            <span class="tag">Ideologies</span>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                
+                <div class="diary-card" data-category="nations">
+                    <div class="diary-number">45</div>
+                    <div class="diary-info">
+                        <h3>Germany & Central Europe</h3>
+                        <p class="diary-date">January 1, 2024</p>
+                        <p class="diary-excerpt">Detailing the German Empire and Weimar Republic focus trees, plus updates for Austria-Hungary and other Central European nations.</p>
+                        <div class="diary-tags">
+                            <span class="tag">Germany</span>
+                            <span class="tag">Austria-Hungary</span>
+                            <span class="tag">Central Europe</span>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
-            <!-- ***** Changelog End ***** -->
-        </div>
-    </div>
-</section>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <span class="page-separator">...</span>
+                <button class="page-btn">10</button>
+            </div>
+            
+            <div class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No matching dev diaries found</h3>
+                <p>Try different search terms or filter options</p>
+                <button id="resetSearch" class="reset-btn">Reset Search</button>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Rise_of_Nations.gif" alt="Rise of Nations Logo">
+                <p>Rise of Nations HOI4 Mod</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2026448968" target="_blank">Steam Workshop</a></li>
+                    <li><a href="https://discord.gg/BYuQP34wVm" target="_blank">Discord</a></li>
+                    <li><a href="https://github.com/RiseOfNationsTeam/RiseOfNations" target="_blank">GitHub</a></li>
+                    <li><a href="RON_credits.html">Credits</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Have questions or suggestions?</p>
+                <a href="mailto:riseofnationsmod@gmail.com">riseofnationsmod@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rise of Nations Team. Hearts of Iron IV is a registered trademark of Paradox Interactive.</p>
+        </div>
+    </footer>
+
+    <script src="changelogs.js"></script>
 </body>
 </html>
+
