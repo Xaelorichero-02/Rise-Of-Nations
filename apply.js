@@ -62,3 +62,60 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+if (applicationForm) {
+    applicationForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get the submit button and disable it
+        const submitButton = applicationForm.querySelector("button[type='submit']");
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Submitting..."; // Optional: change button text
+        }
+
+        // Collect form data
+        const formData = new FormData(applicationForm);
+        let formValues = {};
+        formData.forEach((value, key) => {
+            formValues[key] = value;
+        });
+
+        // Format message for Discord
+        const payload = {
+            content: "New Application Submission!\n" + 
+                     Object.entries(formValues).map(([key, value]) => `**${key}:** ${value}`).join("\n")
+        };
+
+        // Send data to Discord webhook
+        fetch("https://discord.com/api/webhooks/1346802692584116256/PQUZUsj5jbGOuETtt_4OC9oe5zGvfPWyKOnhuhEixPNov9i3s3HBqATqx9mtjv28KRee", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Success:", data);
+
+            // Hide the form
+            applicationForm.style.display = 'none';
+
+            // Show success message
+            const formSuccess = document.getElementById('formSuccess');
+            if (formSuccess) {
+                formSuccess.style.display = 'block';
+                formSuccess.scrollIntoView({ behavior: 'smooth' });
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+
+            // Re-enable the button in case of an error
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "Submit"; // Reset text
+            }
+        });
+    });
+}
