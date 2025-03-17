@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open RON_dd_51_24.html",
-            "file": "c:\\Users\\Lukas\\Documents\\GitHub\\Rise-Of-Nations\\RON_dd_51_24.html"
+            "name": "Open RON_diaries.html",
+            "file": "c:\\Users\\Lukas\\Documents\\GitHub\\Rise-Of-Nations\\RON_diaries.html"
         }
     ]
 }
