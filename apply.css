@@ -64,6 +64,12 @@ header {
     transform: scale(1.05);
 }
 
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     display: flex;
     list-style: none;
